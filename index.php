@@ -61,7 +61,7 @@
             <a href="#" class="btn1">Haz tu pedido ahora</a>
         </div>
         <div class="info-img">
-            <img src="img/digital.png" alt="Cliente feliz">
+            <img src="img/secciones/card/digital.png" alt="Cliente feliz">
         </div>
     </section>
 
