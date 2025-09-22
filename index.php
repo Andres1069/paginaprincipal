@@ -10,38 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo/carrito.png">
 </head>
 <body>
-    <header>
-  <div class="header-bar">
-
-    <!-- Caja 1: Logo, Buscador y Sesión -->
-    <div class="header-top">
-      <div class="logo-box">
-        <a href="http://localhost/paginaweb/#">
-          <img src="img/logo/logo-removebg-preview.png" alt="Carrito" class="logo">
-        </a>
-      </div>
-
-      <div class="search-box">
-        <input type="search" placeholder="¿Qué estás buscando?">
-      </div>
-
-      <div class="session-links">
-        <a href="#">Iniciar sesión</a>
-        <a href="#">Registrarse</a>
-      </div>
-    </div>
-
-    <!-- Caja 2: Navegación -->
-    <div class="header-bottom">
-      <nav class="main-nav">
-        <a href="#">Inicio</a>
-        <a href="#">Categorías</a>
-        <a href="#">Promociones</a>
-        <a href="#">Contacto</a>
-      </nav>
-    </div>
-  </div>
-</header>
+    <?php include 'header.php'; ?>
     <section class="hero">
         <h2>Pensado para ti y tu familia 💚</h2>
         <p>Tu supermercado, más cerca que nunca.</p>
@@ -120,37 +89,8 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h4>Información</h4>
-                <a href="#">Quiénes somos</a>
-                <a href="#">Preguntas Frecuentes</a>
-                <a href="#">Servicios</a>
-                <a href="#">Productos</a>
-            </div>
-
-            <div class="footer-column">
-                <h4>Soporte</h4>
-                <a href="#">PQRS</a>
-                <a href="#">Política de cambios y devoluciones</a>
-                <a href="#">Solicitud de garantías</a>
-                <a href="#">Términos y condiciones</a>
-            </div>
-
-            <div class="footer-column">
-                <h4>Contacto</h4>
-                <a href="#">Trabaja con nosotros</a>
-                <a href="#">Contáctanos</a>
-                <a href="#">Centro de ayudas</a>
-                <a href="#">Alcance de pedidos</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Mercado Digital · Todos los derechos reservados</p>
-        </div>
-    </footer>
-
+    
+    <?php include 'footer.php'; ?>
 
 </body>
 

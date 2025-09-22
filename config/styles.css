@@ -581,3 +581,322 @@ header {
     gap: 8px;
   }
 }
+
+  /* ==========================
+   Categorías principales
+========================== */
+.categorias {
+  padding: 60px 10%;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.categorias h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #166534;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.categoria-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.categoria-card img {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.categoria-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.categoria-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+/* ==========================
+   Subcategorías
+========================== */
+.subcategorias {
+  padding: 50px 10%;
+  background: #ffffff;
+}
+
+.subcategorias h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #115e1c;
+  text-align: center;
+}
+
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.sub-card {
+  background: #fdfdfd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sub-card img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.sub-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.sub-card:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================
+   CTA (Call to Action)
+========================== */
+.cta {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #166534, #0f3d2e);
+  color: white;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta .btn {
+  background: #22c55e !important;
+  color: white !important;
+  padding: 14px 28px !important;
+  border-radius: 50px !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  transition: background 0.3s ease, transform 0.3s ease !important;
+}
+
+.cta .btn:hover {
+  background: #16a34a;
+  transform: translateY(-3px);
+}
+
+/* ==========================
+   Promciones
+========================== */
+
+/* Sección Ofertas Flash */
+.oferta-flash {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 2rem;
+  background: #f8f9fa; /* fondo suave */
+  border-radius: 20px;
+  max-width: 1100px;
+}
+
+/* Título y contador */
+.oferta-flash h2 {
+  font-size: 2rem;
+  color: #046e4b;
+  margin-bottom: 0.5rem;
+}
+.oferta-flash p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+#countdown {
+  font-weight: bold;
+  color: #e63946;
+  background: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Contenedor flexible */
+.oferta-flash .promo-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* para que en móvil baje */
+}
+
+/* Cards */
+.oferta-flash .promo-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.oferta-flash .promo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.oferta-flash .promo-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.oferta-flash .promo-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+.promos-destacadas {
+  padding: 60px 10%;
+  background: #fef9f4;
+  text-align: center;
+}
+
+.promos-destacadas h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #b45309;
+  font-weight: bold;
+}
+
+.promos-destacadas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.promos-destacadas .promo-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.promos-destacadas .promo-card:hover {
+  transform: translateY(-5px);
+}
+
+.promos-destacadas .promo-card img {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.promos-destacadas .promo-card p {
+  font-weight: 600;
+  color: #14532d;
+}
+
+.promos-destacadas .discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #dc2626;
+  color: white;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Contactanos*/
+
+.contacto {
+  padding: 60px 10%;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #14532d;
+}
+
+.contacto p {
+  margin-bottom: 40px;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+  color: #064e3b;
+}
+
+.contact-card a {
+  color: #059669;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-cta {
+  margin-top: 40px;
+}
+
+.contact-cta .btn {
+  display: inline-block;
+  background: #059669;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-cta .btn:hover {
+  background: #047857;
+}
