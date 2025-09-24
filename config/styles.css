@@ -900,3 +900,163 @@ header {
 .contact-cta .btn:hover {
   background: #047857;
 }
+
+/* LOGIN Contenedor principal */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botón Volver */
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+.btn-back:hover {
+  color: #2e7d32;
+}
+.btn-back svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Logo */
+.logo img {
+  max-width: 120px;
+  margin-bottom: 25px;
+}
+
+/* Formulario */
+form {
+  text-align: left;
+}
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+input:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 5px rgba(46,125,50,0.3);
+}
+
+/* Opciones */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.form-options a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 600;
+}
+.form-options a:hover {
+  text-decoration: underline;
+}
+
+/* Botón entrar */
+button[type="submit"] {
+  width: 100%;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button[type="submit"]:hover {
+  background: #256927;
+}
+
+/* Registro */
+.register {
+  margin: 20px 0;
+  font-size: 14px;
+}
+.register a {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: none;
+}
+.register a:hover {
+  text-decoration: underline;
+}
+
+/* Botones sociales */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.btn-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-social img {
+  width: 18px;
+  height: 18px;
+}
+.btn-google {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+}
+.btn-google:hover {
+  background: #f4f4f4;
+}
+.btn-facebook {
+  background: #1877f2;
+  color: #fff;
+}
+.btn-facebook:hover {
+  background: #145ecb;
+}
